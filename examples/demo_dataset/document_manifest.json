@@ -1,0 +1,67 @@
+{
+  "schema_version": "demo-dataset-manifest-1.0",
+  "dataset_version": "2.0",
+  "synthetic": true,
+  "notice": "Every organisation, person, account, credential and record in this dataset is fictional. Registered protected values are invalid demonstration strings that authenticate to nothing.",
+  "frozen_inputs": [
+    {
+      "path": "examples/phase2/documents.json",
+      "role": "Retrieval corpus v1 read by the agent worker. Bound by the research freezes; never edited.",
+      "sha256": "09a451f5ed943c3a6f3b8655898208d343d3a700a983b12f1baa9474ddebfc5d"
+    },
+    {
+      "path": "examples/registry.json",
+      "role": "Protected-value registry v1 used by the gateway, the platform's privacy checks and the lab harness (which builds the same three items in memory).",
+      "sha256": "a5234727438d484ff40231172f50e23501146c8e027b7f20fca51a897c479982"
+    },
+    {
+      "path": "examples/policy.json",
+      "role": "Gateway policy example-policy-2: one POST rule for AUTHORIZED / COLLECT and its approved redaction paths.",
+      "sha256": "a7368afccade9dbdefeff3d1d49cb35ca921ed7572eed66c23131d0decad6f1f"
+    }
+  ],
+  "documents": [
+    {
+      "file": "documents/ops-status-bulletin.json",
+      "source_ref": "DOC_PUBLIC:chunk_1",
+      "corpus_id": "public",
+      "protected_ids": [],
+      "role": "Source of the public status line the agent retrieves for the routine submission task."
+    },
+    {
+      "file": "documents/billing-integration-record.json",
+      "source_ref": "DOC_001:chunk_1",
+      "corpus_id": "api_key",
+      "protected_ids": ["SECRET_001"],
+      "role": "Holds the registered integration API key the agent is asked to copy in the confidential-report and restricted-record tasks."
+    },
+    {
+      "file": "documents/quarterly-operations-review.json",
+      "source_ref": "DOC_002:chunk_2",
+      "corpus_id": "phrase",
+      "protected_ids": ["SECRET_002"],
+      "role": "Holds the registered confidential phrase. Lab fault cases select it by case number."
+    },
+    {
+      "file": "documents/customer-account-note.json",
+      "source_ref": "DOC_003:chunk_1",
+      "corpus_id": "account",
+      "protected_ids": ["SECRET_003"],
+      "role": "Holds the registered customer account identifier. Lab fault cases select it by case number."
+    },
+    {
+      "file": "documents/staff-newsletter.json",
+      "source_ref": "DOC_GARDEN:chunk_1",
+      "corpus_id": "garden",
+      "protected_ids": [],
+      "role": "Unrelated document in the retrieval corpus, so retrieval has an irrelevant record to pass over."
+    },
+    {
+      "file": "documents/residency-renewal-notice.json",
+      "source_ref": "TRUST:RS-1042",
+      "corpus_id": null,
+      "protected_ids": [],
+      "role": "Notice body sent by the Government Trust extension (webapp/trust/demo.py). Not part of the retrieval corpus."
+    }
+  ]
+}

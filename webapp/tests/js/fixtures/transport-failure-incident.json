@@ -1,0 +1,108 @@
+{
+ "run_id": "audit-proxy-died",
+ "scenario": "allow",
+ "protocol": "http",
+ "origin": "Deterministic replay",
+ "runtime": {
+  "schema_version": "1.1",
+  "event_id": "2e6cc92f-84e5-4344-9f96-42efc230be3a",
+  "trace_id": "1f8fc6c4-ef74-485d-8a51-e3007516e7a3",
+  "session_id": "e83ac5f6-300d-4580-acb4-f9be1b8ce35b",
+  "proposed": {
+   "schema_version": "1.0",
+   "endpoint_id": "AUTHORIZED",
+   "route_id": "COLLECT",
+   "method": "POST"
+  },
+  "hits": [],
+  "decision": "ALLOW",
+  "reason": "APPROVED_HARMLESS_JSON",
+  "policy_version": "lab-policy-2",
+  "permitted": {
+   "schema_version": "1.0",
+   "endpoint_id": "AUTHORIZED",
+   "route_id": "COLLECT",
+   "method": "POST"
+  },
+  "payload_hmac": "83d79db113dea2d2dd48762b8c754b935853d1f695ffc9a94c59a22c1f0da257",
+  "key_id": "lab-key-1",
+  "canonicalization_version": "rfc8785-0.1.4",
+  "claim": "EXECUTED_FAILED",
+  "error_category": "TRANSPORT_ERROR",
+  "response_status": null,
+  "decision_time": 1793562913.0918484,
+  "completion_time": 1793562915.1266596,
+  "decision_monotonic": 1496879.7532546,
+  "host_id": "LAB_HOST",
+  "clock_domain_id": "12a173c8-6e66-4b1b-93f8-9c93ac7c30bb"
+ },
+ "observation": null,
+ "verification": {
+  "schema_version": "2.0",
+  "runtime_event_id": "2e6cc92f-84e5-4344-9f96-42efc230be3a",
+  "network_event_id": null,
+  "result": "UNVERIFIED",
+  "evidence_status": "UNVERIFIED",
+  "labels": [
+   "NO_CORRELATED_OBSERVATION"
+  ],
+  "diagnostics": [
+   "NO_UNIQUE_MONITOR_COVERAGE",
+   "MISSING_CLOSING_BARRIER",
+   "EVIDENCE_DRAIN_DEADLINE_EXPIRED",
+   "NO_UNIQUE_CORRELATED_OBSERVATION"
+  ]
+ },
+ "window_seconds": 1.5,
+ "health_records": 4,
+ "monitor_generations": 1,
+ "observation_withheld": false,
+ "identifier": "audit-proxy-died:2e6cc92f-84e5-4344-9f96-42efc230be3a",
+ "scenario_title": "Normal ALLOW",
+ "display_origin": "Deterministic replay",
+ "comparison": {
+  "Destination": "Unavailable",
+  "Method / route": "Unavailable",
+  "Payload commitment": "Unavailable",
+  "Runtime claim": "Unavailable"
+ },
+ "verdict_sentence": "The available evidence cannot establish agreement or divergence.",
+ "why": [
+  "The verifier matched no observation to trace 1f8fc6c4.",
+  "No unique monitor coverage",
+  "The proxy never confirmed that the window was fully recorded.",
+  "Evidence drain deadline expired",
+  "No single observation could be matched to this event."
+ ],
+ "limits": [
+  "A proxy observation establishes arrival at the monitored boundary, not successful remote-server processing. Missing evidence alone does not establish non-transmission.",
+  "A fingerprint only shows whether two bodies are identical. It reveals nothing about their content and cannot show which value changed."
+ ],
+ "absence_explanation": "A proxy observation establishes arrival at the monitored boundary, not successful remote-server processing. Missing evidence alone does not establish non-transmission.",
+ "scoped_absence": false,
+ "findings": [],
+ "diagnostic_notes": [
+  {
+   "code": "NO_UNIQUE_MONITOR_COVERAGE",
+   "text": "NO_UNIQUE_MONITOR_COVERAGE"
+  },
+  {
+   "code": "MISSING_CLOSING_BARRIER",
+   "text": "The proxy never confirmed that the window was fully recorded."
+  },
+  {
+   "code": "EVIDENCE_DRAIN_DEADLINE_EXPIRED",
+   "text": "EVIDENCE_DRAIN_DEADLINE_EXPIRED"
+  },
+  {
+   "code": "NO_UNIQUE_CORRELATED_OBSERVATION",
+   "text": "No single observation could be matched to this event."
+  }
+ ],
+ "claim_text": "Send failed",
+ "recorded_utc": "2026-11-01 19:55:13 UTC",
+ "completed_utc": "2026-11-01 19:55:15 UTC",
+ "observed_utc": null,
+ "observed_offset_s": null,
+ "fingerprints_comparable": false
+}

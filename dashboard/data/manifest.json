@@ -1,0 +1,7 @@
+{
+  "schema_version": "dashboard-1.1",
+  "files": {
+    "qwen3-live": "f778d8f975df125a3689300d8b053459232de363c653a4f3985303d0ac1c2861",
+    "engineering-faults": "0faaed4e0a0974d350101b57c729472972dcfb2abe8cabbd49225947d5b4ce9a"
+  }
+}

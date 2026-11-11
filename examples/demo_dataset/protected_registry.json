@@ -1,0 +1,30 @@
+{
+  "schema_version": "demo-protected-index-1.0",
+  "registry": "examples/registry.json",
+  "registry_sha256": "a5234727438d484ff40231172f50e23501146c8e027b7f20fca51a897c479982",
+  "values_included": false,
+  "note": "This index names the registered items by ID and category only. The values themselves stay in the frozen registry, and the platform never sends them to a browser.",
+  "items": [
+    {
+      "protected_id": "SECRET_001",
+      "data_type": "API_KEY",
+      "category": "Integration API key",
+      "source_ref": "DOC_001:chunk_1",
+      "document": "documents/billing-integration-record.json"
+    },
+    {
+      "protected_id": "SECRET_002",
+      "data_type": "CONFIDENTIAL_TEXT",
+      "category": "Restricted review text",
+      "source_ref": "DOC_002:chunk_2",
+      "document": "documents/quarterly-operations-review.json"
+    },
+    {
+      "protected_id": "SECRET_003",
+      "data_type": "ACCOUNT_ID",
+      "category": "Customer account identifier",
+      "source_ref": "DOC_003:chunk_1",
+      "document": "documents/customer-account-note.json"
+    }
+  ]
+}

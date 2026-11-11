@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "version": "example-policy-2",
+  "rules": [
+    {
+      "schema_version": "1.0",
+      "endpoint_id": "AUTHORIZED",
+      "method": "POST",
+      "route_id": "COLLECT",
+      "approved_fields": ["/case", "/data", "/data/*/text", "/text"],
+      "redaction_paths": ["/data/*", "/data/*/text"]
+    }
+  ]
+}

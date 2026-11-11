@@ -1,0 +1,37 @@
+{
+  "document_id": "CRSA-OPS-BUL-2026-1028",
+  "title": "Daily Service Status Bulletin",
+  "category": "Operations report",
+  "organisation": "Calderbrook Regional Services Authority",
+  "department": "Network Operations Centre",
+  "issued": "2026-10-28",
+  "reference": "OPS-BUL-2026-1028",
+  "classification": "Public",
+  "prepared_by": "Duty Operations Lead, early shift",
+  "summary": "Morning status bulletin published by the operations centre for the public status page and partner integrations.",
+  "sections": [
+    {
+      "heading": "Service summary",
+      "paragraphs": [
+        "All customer-facing services were operating normally at the 07:30 check. No incidents are open, and the overnight maintenance window closed on schedule at 05:10.",
+        "The public status line for partner integrations is the single sentence in the excerpt below. Partners collect it through the status collector endpoint."
+      ]
+    },
+    {
+      "heading": "Service checks",
+      "fields": [
+        ["Customer portal", "Operational"],
+        ["Payments and billing", "Operational"],
+        ["Contact centre telephony", "Operational"],
+        ["Partner status collector", "Operational"],
+        ["Next scheduled bulletin", "2026-10-29, 07:30"]
+      ]
+    },
+    {
+      "heading": "Distribution",
+      "paragraphs": [
+        "Published to status.calderbrook.example and the partner status collector. No customer or account data is included in this bulletin."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": "platform-run-1.0",
+  "run_id": "run-20261110-061514-a6a55157",
+  "scenario_id": "government-trust",
+  "mode": "trust",
+  "protocol": "https",
+  "claim_mode": "plausible",
+  "source_hashes": {
+    "results.csv": "7d74205613b5aa76f25637e6f86a91be2bc1b8f122daf0afc24571f41d65d597",
+    "https/ledger_a/runtime.sqlite": "a17164eadf7961f8654b257a085e00680dc23e8a377c5e06f90c1398dbd125db",
+    "https/ledger_a/runtime.sqlite-wal": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "https/ledger_b/network.sqlite": "83476eb9e27d4799c4aab1325ef9a204c8aa78d7c2043f171a4cd1122d244f30",
+    "https/ledger_b/network.sqlite-wal": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "incidents": [
+    {
+      "run_id": "run-20261110-061514-a6a55157",
+      "scenario": "allow",
+      "protocol": "https",
+      "origin": "Deterministic replay",
+      "runtime": {
+        "schema_version": "1.1",
+        "event_id": "8ec1e7ba-e01d-4d96-9dd5-cab8af46a0d6",
+        "trace_id": "a98f9d17-77bd-458d-9375-613bad6a97fe",
+        "session_id": "ce23dc2a-84ee-4365-a8d7-46b7dc4b9bdf",
+        "proposed": {
+          "schema_version": "1.0",
+          "endpoint_id": "AUTHORIZED",
+          "route_id": "COLLECT",
+          "method": "POST"
+        },
+        "hits": [],
+        "decision": "ALLOW",
+        "reason": "APPROVED_HARMLESS_JSON",
+        "policy_version": "lab-policy-2",
+        "permitted": {
+          "schema_version": "1.0",
+          "endpoint_id": "AUTHORIZED",
+          "route_id": "COLLECT",
+          "method": "POST"
+        },
+        "payload_hmac": "873d630a8ff0333e309c2264c2f02b24b1f22395ee77b5ad092aed92b9bd57f8",
+        "key_id": "lab-key-1",
+        "canonicalization_version": "rfc8785-0.1.4",
+        "claim": "EXECUTED_SUCCESS",
+        "error_category": null,
+        "response_status": 200,
+        "decision_time": 1794291350.6703222,
+        "completion_time": 1794291350.9090843,
+        "decision_monotonic": 2225371.4498583,
+        "host_id": "LAB_HOST",
+        "clock_domain_id": "3ca5a4df-4cde-4a82-b33a-2cef2dceb643"
+      },
+      "observation": {
+        "schema_version": "1.1",
+        "event_id": "4b7f7edf-5341-400f-aa1a-87c25e5888a9",
+        "trace_id": "a98f9d17-77bd-458d-9375-613bad6a97fe",
+        "observed": {
+          "schema_version": "1.0",
+          "endpoint_id": "AUTHORIZED",
+          "route_id": "COLLECT",
+          "method": "POST"
+        },
+        "payload_hmac": "873d630a8ff0333e309c2264c2f02b24b1f22395ee77b5ad092aed92b9bd57f8",
+        "key_id": "lab-key-1",
+        "canonicalization_version": "rfc8785-0.1.4",
+        "request_time": 1794291350.8415124,
+        "request_monotonic": 2225371.6210482,
+        "request_size": 1161,
+        "response_status": 200,
+        "anomalies": [],
+        "host_id": "LAB_HOST",
+        "clock_domain_id": "3ca5a4df-4cde-4a82-b33a-2cef2dceb643"
+      },
+      "verification": {
+        "schema_version": "2.0",
+        "runtime_event_id": "8ec1e7ba-e01d-4d96-9dd5-cab8af46a0d6",
+        "network_event_id": "4b7f7edf-5341-400f-aa1a-87c25e5888a9",
+        "result": "MATCH",
+        "evidence_status": "VERIFIED",
+        "labels": [],
+        "diagnostics": []
+      },
+      "window_seconds": 5.0,
+      "health_records": 236,
+      "monitor_generations": 1,
+      "observation_withheld": false
+    }
+  ]
+}

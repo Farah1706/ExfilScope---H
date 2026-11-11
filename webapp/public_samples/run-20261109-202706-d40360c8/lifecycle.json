@@ -1,0 +1,188 @@
+{
+  "schema_version": "platform-lifecycle-1.0",
+  "run_id": "run-20261109-202706-d40360c8",
+  "scenario_id": "government-trust",
+  "scenario_title": "Citizen-service assistant acting under a delegated capability",
+  "mode": "trust",
+  "protocol": "https",
+  "protected_item": null,
+  "claim_mode": "plausible",
+  "trust_driver": "qwen3",
+  "operator_lifecycle": false,
+  "operator_id": null,
+  "origin": "Government Trust extension",
+  "status": "succeeded",
+  "created": 1794256026.921691,
+  "finished": 1794256064.7678783,
+  "exit_code": 0,
+  "error": null,
+  "timeout_seconds": 180,
+  "stages": [
+    {
+      "id": "environment",
+      "label": "Environment validation",
+      "status": "complete",
+      "detail": "Run directory and request validated",
+      "facts": {
+        "run_id": "run-20261109-202706-d40360c8"
+      },
+      "at": 1794256027.8682222
+    },
+    {
+      "id": "preparation",
+      "label": "Synthetic source and task preparation",
+      "status": "complete",
+      "detail": "Lab harness ready: receivers, monitor and ledgers",
+      "facts": {
+        "protocol": "https"
+      },
+      "at": 1794256036.9211287
+    },
+    {
+      "id": "proposal",
+      "label": "Agent proposal or deterministic case setup",
+      "status": "complete",
+      "detail": "Issuer key, registered agent identity and task capability",
+      "facts": {
+        "task": "residence-pilot-workload-brief"
+      },
+      "at": 1794256036.928992
+    },
+    {
+      "id": "gateway",
+      "label": "Gateway policy evaluation",
+      "status": "complete",
+      "detail": "Accepted attempt authorized by the research gateway",
+      "facts": {
+        "decision": "ALLOW"
+      },
+      "at": 1794256064.4742212
+    },
+    {
+      "id": "execution",
+      "label": "Authorized action and runtime execution",
+      "status": "complete",
+      "detail": "Runtime claim recorded in Ledger A",
+      "facts": {},
+      "at": 1794256064.4776545
+    },
+    {
+      "id": "observation",
+      "label": "Independent proxy observation",
+      "status": "complete",
+      "detail": "Correlated observation paired by the verifier",
+      "facts": {
+        "paired": true
+      },
+      "at": 1794256064.4809322
+    },
+    {
+      "id": "drain",
+      "label": "Evidence drain and monitoring-window completion",
+      "status": "complete",
+      "detail": "Window closed and monitor health drained",
+      "facts": {
+        "window_seconds": 5.0
+      },
+      "at": 1794256064.483548
+    },
+    {
+      "id": "verification",
+      "label": "Correlation and verification",
+      "status": "complete",
+      "detail": "Verifier classified the accepted attempt",
+      "facts": {
+        "result": "MATCH",
+        "evidence_status": "VERIFIED"
+      },
+      "at": 1794256064.4866
+    },
+    {
+      "id": "export",
+      "label": "Privacy audit and validated evidence export",
+      "status": "complete",
+      "detail": "Snapshot validated and published",
+      "facts": {
+        "incidents": 1
+      },
+      "at": 1794256064.6585586
+    }
+  ],
+  "history": [
+    {
+      "stage": "environment",
+      "status": "complete",
+      "at": 1794256027.8682222
+    },
+    {
+      "stage": "preparation",
+      "status": "running",
+      "at": 1794256028.407409
+    },
+    {
+      "stage": "preparation",
+      "status": "complete",
+      "at": 1794256036.9211287
+    },
+    {
+      "stage": "proposal",
+      "status": "complete",
+      "at": 1794256036.928992
+    },
+    {
+      "stage": "gateway",
+      "status": "running",
+      "at": 1794256036.9327047
+    },
+    {
+      "stage": "gateway",
+      "status": "running",
+      "at": 1794256063.5765703
+    },
+    {
+      "stage": "gateway",
+      "status": "running",
+      "at": 1794256063.5803308
+    },
+    {
+      "stage": "gateway",
+      "status": "running",
+      "at": 1794256063.5844247
+    },
+    {
+      "stage": "gateway",
+      "status": "complete",
+      "at": 1794256064.4742212
+    },
+    {
+      "stage": "execution",
+      "status": "complete",
+      "at": 1794256064.4776545
+    },
+    {
+      "stage": "observation",
+      "status": "complete",
+      "at": 1794256064.4809322
+    },
+    {
+      "stage": "drain",
+      "status": "complete",
+      "at": 1794256064.483548
+    },
+    {
+      "stage": "verification",
+      "status": "complete",
+      "at": 1794256064.4866
+    },
+    {
+      "stage": "export",
+      "status": "running",
+      "at": 1794256064.4884615
+    },
+    {
+      "stage": "export",
+      "status": "complete",
+      "at": 1794256064.6585586
+    }
+  ]
+}

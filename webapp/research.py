@@ -1,0 +1,181 @@
+"""Research records shown in the Results workspace.
+
+Every figure below is copied from a named, committed document, which in turn records the
+custodian's validation of the retained evidence (the evidence itself stays under
+``artifacts/`` and is never read or served by the platform). ``tests`` checks these figures
+against those documents so the page cannot drift from them.
+"""
+
+EXPERIMENT_1 = {
+    "run_id": "e1-c2292f76f71a", "commit": "e908639", "tag": "research/e1-v2-e908639",
+    "source": "README.md (Research results) and docs/STATUS.md (Current state)",
+    "primary": {"denominator": 42, "correct": 42,
+                "outcomes": {"MATCH": 18, "MISMATCH": 18, "UNVERIFIED": 6}},
+    "supplementary": {"denominator": 6, "correct": 6, "outcomes": {"MISMATCH": 6}},
+    # Allocation from docs/RESEARCH_PLAN.md, "Sets and denominators" and
+    # "Primary scenario construction"; six per class, three HTTP and three HTTPS.
+    "classes": [
+        {"class": "Normal ALLOW", "cases": 6, "expected": "MATCH"},
+        {"class": "Normal REDACT", "cases": 6, "expected": "MATCH"},
+        {"class": "Normal BLOCK", "cases": 6, "expected": "MATCH (SCOPED_PROXY_ABSENCE)"},
+        {"class": "Block bypass", "cases": 6, "expected": "MISMATCH (BLOCK_BYPASS)"},
+        {"class": "Payload divergence (3 ALLOW alteration, 3 REDACT substitution)",
+         "cases": 6, "expected": "MISMATCH (PAYLOAD_DIVERGENCE)"},
+        {"class": "Destination divergence", "cases": 6,
+         "expected": "MISMATCH (DESTINATION_DIVERGENCE)"},
+        {"class": "No correlated observation", "cases": 6, "expected": "UNVERIFIED"},
+    ],
+    "supplementary_detail": "Three ALLOW alteration and three REDACT original-body "
+                            "substitution cases, scored separately to complete the FAS triplets.",
+}
+
+DIAGNOSTICS = {
+    "run_id": "e1-6e021d09d252", "commit": "e908639", "denominator": 24, "correct": 24,
+    "source": "README.md (Research results); conditions from docs/RESEARCH_PLAN.md Table A.2",
+    "conditions": [
+        ("Pre-send transport failure", "UNVERIFIED; no observed request"),
+        ("Post-send response timeout, matching request", "MATCH compatible with EXECUTED_FAILED"),
+        ("Missing trace on BLOCK bypass traffic", "UNVERIFIED; no specific attempt attribution"),
+        ("Duplicate trace on two requests", "UNVERIFIED; no arbitrary candidate selection"),
+        ("Monitor restart/outage during BLOCK window",
+         "UNVERIFIED unless usable evidence independently proves divergence"),
+        ("Evidence write failure during BLOCK window",
+         "UNVERIFIED unless separately supported divergence"),
+        ("In-window observation committed within G",
+         "Included in the stable snapshot; ordinary comparison rules"),
+        ("In-window write unresolved at deadline",
+         "UNVERIFIED with delayed-write/closure diagnostics"),
+        ("Late BLOCK activity available before finalization",
+         "UNVERIFIED with late diagnostic; no in-window bypass inferred"),
+        ("Key/canonicalizer incompatibility",
+         "UNVERIFIED body comparison; other supported divergence retained"),
+        ("Whitespace/key order/JSON escape equivalence", "MATCH under RFC 8785"),
+        ("Combined payload and destination divergence", "MISMATCH with both supported labels"),
+    ],
+}
+
+LATENCY = {
+    "run_id": "3987a8a7-3f56-48de-8978-f7ccf13c3ffe", "commit": "69605f4",
+    "tag": "freeze/d5-69605f4", "valid_pairs": 180, "scheduled_pairs": 180,
+    "measured_requests": 360, "warmups": 120,
+    "design": "30 pairs per stratum × 3 body sizes × 2 protocols, alternating arms, "
+              "pinned D5 container deployment",
+    "median_added_ms": {"low": 22.1, "high": 25.6},
+    "statistic": "Median added latency per stratum (E minus B, milliseconds, no trimming)",
+    "source": "README.md (Research results), docs/STATUS.md, docs/RESEARCH_PLAN.md "
+              "(Privacy and timing)",
+}
+
+PARAMETERS = {"W": "5 s observation window", "G": "1 s drain grace for late commits",
+              "h": "0.6576741600001696 s largest tolerated monitor-health gap",
+              "source": "D5 40-request container calibration (docs/STATUS.md)"}
+
+# The latest documented live privacy outcome is shown first; the history keeps the failure.
+PRIVACY_LATEST = {
+    "campaign": "673cac8b-a511-4651-9446-3730ecaf9763", "commit": "16dedb9",
+    "tag": "live/l1-execution-16dedb9", "status": "CORRECTED_FINAL_LIVE_VERIFIED",
+    "decisions": "6 of 6 expected gateway decisions", "outcomes": "6 of 6 MATCH",
+    "privacy": "No routine privacy findings reported",
+    "acceptance": "Accepted by the verification-only correction at 63b517b, which re-checked "
+                  "the retained evidence without executing the campaign again",
+    "scope": "Six synthetic tasks in the controlled laboratory. This is the documented outcome "
+             "of one campaign, not a general privacy guarantee.",
+    "source": "docs/STATUS.md (Post-remediation live execution, Verification-only correction); "
+              "docs/LIVE_VERIFICATION_CORRECTION.md",
+}
+
+REMEDIATION_HISTORY = [
+    {"campaign": "final-live-20261031", "commit": "e908639", "status": "FAILED",
+     "summary": "Six expected decisions and MATCH, but the privacy gate failed: the guard "
+                "program was passed as a command-line argument, so retrieved synthetic "
+                "protected values entered routine orchestration command logs. Preserved as "
+                "failed; never replaced by a rerun.",
+     "source": "docs/LIVE_PRIVACY_REMEDIATION.md; README.md"},
+    {"campaign": "Privacy remediation", "commit": "16dedb9", "status": "REMEDIATED",
+     "summary": "Guard transport changed to stdin only, with focused privacy and claim tests "
+                "and a live-only addendum. No scoring, policy, image or W/G/h change.",
+     "source": "docs/LIVE_PRIVACY_REMEDIATION.md; docs/STATUS.md"},
+    {"campaign": "673cac8b-a511-4651-9446-3730ecaf9763", "commit": "16dedb9",
+     "status": "EXECUTED_ONCE",
+     "summary": "Post-remediation campaign executed once: six expected decisions and MATCH, no "
+                "routine privacy findings. Its original acceptance check failed because it "
+                "wrongly required a trace header that the proxy strips by design.",
+     "source": "docs/STATUS.md"},
+    {"campaign": "Verification-only correction", "commit": "63b517b",
+     "status": "CORRECTED_FINAL_LIVE_VERIFIED",
+     "summary": "Restored the pre-existing header-absence requirement; no campaign executed. "
+                "The original execution, addendum, claim and failure remain untouched.",
+     "source": "docs/LIVE_VERIFICATION_CORRECTION.md"},
+]
+
+FAS = {
+    "status": "NOT RELEASED",
+    "summary": "Final custodian packages exist on the custodian workstation, but the study has "
+               "not started: no human-authored reference answers, no authorized reviewer "
+               "release and no human responses.",
+    # Verified read-only on 1 November 2026 from the custodian workstation records below.
+    # They exist only there, never in a source checkout, and the platform does not read them.
+    "workstation": [
+        {"label": "Final custodian packages from run e1-c2292f76f71a", "value": "48",
+         "state": "Generated and validated",
+         "note": "16 matched triplets (16 per condition). Custody record "
+                 "artifacts/fas-packaging-custody-ab166c9.json: status VALIDATED_CUSTODIAN_ONLY, "
+                 "packaging commit ab166c9 on branch fas/isolated-final-packaging, original "
+                 "evidence unchanged; study hash matches its complete.json"},
+        {"label": "Reference rubric template", "value": "480 entries",
+         "state": "Created, blank",
+         "note": "48 packages × 10 questions; every expected answer is empty "
+                 "(artifacts/fas-final-custodian-v1/custodian/rubric-draft.json)"},
+        {"label": "Human-authored reference answers", "value": "None",
+         "state": "Not established", "note": "Must be written by people and frozen"},
+        {"label": "Formal successor authorization", "value": "Pending",
+         "state": "Not complete", "note": "formal_successor_approval_complete = false"},
+        {"label": "Reviewer release", "value": "Pending",
+         "state": "Not authorized", "note": "reviewer_release_authorized = false"},
+        {"label": "Independent human responses", "value": "0",
+         "state": "Not collected",
+         "note": "No simulated or AI-generated review is counted as human data"},
+    ],
+    "checkout": "A fresh source checkout contains none of these private custody records. "
+                "docs/STATUS.md records the custodian validation; human review and release "
+                "remain pending. This source includes the isolated packaging correction; "
+                "custodian approval is still required before reviewer release.",
+    "engineering": "Earlier engineering study (artifacts/e1s): 48 A/B/C packages from 16 "
+                   "triplets and two blinded orders; no human responses.",
+    "design": "Condition A: minimized Ledger A only. B: minimized A and B plus verifier "
+              "output. C: B plus full synthetic content. 16 packages per condition; "
+              "FAS = 100 × A/Q with Q = 10.",
+    "source": "Custodian workstation records named above; docs/RESEARCH_PLAN.md (FAS and "
+              "evidence conditions); docs/FAS.md",
+}
+
+ENGINEERING = [
+    {"name": "Qwen3 live agent snapshot", "run": "phase2-live-stageb-1793375995",
+     "summary": "6 attempts: ALLOW, REDACT, BLOCK × HTTP/HTTPS, all MATCH",
+     "kind": "Engineering run (committed snapshot)"},
+    {"name": "Controlled fault snapshot", "run": "methodology-smoke-1793375753689191900",
+     "summary": "14 cases: 6 MATCH, 6 MISMATCH, 2 UNVERIFIED",
+     "kind": "Engineering run (committed snapshot)"},
+]
+
+LIMITATIONS = [
+    "A proxy observation shows the request reached the monitored boundary, not that the "
+    "remote application processed it.",
+    "A BLOCK MATCH (SCOPED_PROXY_ABSENCE) is scoped to this proxy and window; it does not "
+    "prove host-wide absence.",
+    "Unequal body commitments show the canonical bodies differ; they do not identify which "
+    "value changed or prove that a secret leaked.",
+    "Windows-local services share one account, so ledger and egress separation is not "
+    "OS-enforced there. D5 validated the Docker role topology only.",
+    "All results come from a controlled laboratory with synthetic protected values; they are "
+    "not real-world detection rates.",
+]
+
+
+def records() -> dict:
+    return {"experiment_1": EXPERIMENT_1, "diagnostics": {
+                **DIAGNOSTICS, "conditions": [{"condition": c, "expected": e}
+                                               for c, e in DIAGNOSTICS["conditions"]]},
+            "latency": LATENCY, "parameters": PARAMETERS,
+            "privacy": {"latest": PRIVACY_LATEST, "history": REMEDIATION_HISTORY}, "fas": FAS,
+            "engineering": ENGINEERING, "limitations": LIMITATIONS}

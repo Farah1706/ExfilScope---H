@@ -1,0 +1,27 @@
+{
+  "document_id": "CRSA-STAFF-NL-2026-10",
+  "title": "Staff Association Newsletter, October 2026",
+  "category": "Internal newsletter",
+  "organisation": "Calderbrook Regional Services Authority",
+  "department": "Staff Association",
+  "issued": "2026-10-03",
+  "reference": "STAFF-NL-2026-10",
+  "classification": "Internal",
+  "prepared_by": "Staff Association committee",
+  "summary": "Monthly staff newsletter. Included in the retrieval corpus as an unrelated document, so retrieval has something irrelevant to pass over.",
+  "sections": [
+    {
+      "heading": "Community garden",
+      "paragraphs": [
+        "The allotment behind the depot had its best tomato harvest yet. Volunteers are needed for autumn watering and for clearing the vegetable beds before the first frost."
+      ]
+    },
+    {
+      "heading": "Dates",
+      "fields": [
+        ["Garden work morning", "Saturday 17 October, 09:00"],
+        ["Quiz night", "Thursday 29 October, 18:30"]
+      ]
+    }
+  ]
+}

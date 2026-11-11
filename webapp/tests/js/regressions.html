@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ExfilScope UI regressions</title>
+  <script type="module" src="regressions.js"></script>
+</head>
+<body>
+  <!-- Elements the shell (app.js) looks up when lab.js imports it; it finds no service here. -->
+  <div class="shell"><a id="brand"></a><a id="brand-top"></a><button id="menu"></button><nav id="rail"><div id="nav"></div></nav>
+    <button id="health"><span id="health-dot"></span><span id="health-text"></span></button><main id="main"></main></div>
+  <div id="drawer-root"></div>
+  <pre id="result">PENDING</pre>
+</body>
+</html>

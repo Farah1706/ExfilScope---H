@@ -1,0 +1,21 @@
+{
+  "publisher": "GDRFA Dubai",
+  "metric": "RES Transactions",
+  "unit": "transactions",
+  "retrieved": "2026-11-04",
+  "reuse_url": "https://www.gdrfad.gov.ae/en/open-data-policy",
+  "rows": [
+    {
+      "year": 2024,
+      "transactions": 5989840,
+      "source_url": "https://www.gdrfad.gov.ae/sites/default/files/gdrfa_tables/statistics/GDRFAD-Statistics2024-en.pdf",
+      "sha256": "892e749d7d9687657693c6cf056e819bc1b2f153aa8a9492d92e93a6a31e9d48"
+    },
+    {
+      "year": 2025,
+      "transactions": 6998414,
+      "source_url": "https://www.gdrfad.gov.ae/sites/default/files/gdrfa_tables/statistics/GDRFAD-Statistics2025-en.pdf",
+      "sha256": "443faf581f820c60975f4f950f74663c8797bc889a54d429c51c71b788994f05"
+    }
+  ]
+}

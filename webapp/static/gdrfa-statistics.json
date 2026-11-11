@@ -1,0 +1,406 @@
+{
+  "publisher": "GDRFA Dubai",
+  "dataset": "GDRFA Dubai Statistics (annual transactions tables)",
+  "landing_url": "https://gdrfad.gov.ae/en/open-data",
+  "reuse_url": "https://www.gdrfad.gov.ae/en/open-data-policy",
+  "classification": "OPEN_AGGREGATE",
+  "retrieved": "2026-11-10",
+  "unit": "count",
+  "years": [
+    {
+      "year": 2018,
+      "source_url": "https://www.gdrfad.gov.ae/sites/default/files/gdrfa_tables/statistics/GDRFAD-Statistics2018-en.xlsx",
+      "sha256": "f9aebe689065afb9ba27d3babe14b4935de3e35476ca776c7d7987f275579b73",
+      "cells": {
+        "entry_permit_transactions": 12321038,
+        "residence_transactions": 3747959,
+        "establishment_transactions": 160430,
+        "port_movements_total": 53826082,
+        "smart_gate_corridor_total": 7325342
+      },
+      "checks": {
+        "airport": {
+          "entry": 25473661,
+          "exit": 25233228,
+          "total": 50706889
+        },
+        "land_border": {
+          "entry": 1559575,
+          "exit": 1019251,
+          "total": 2578826
+        },
+        "seaport": {
+          "entry": 275664,
+          "exit": 264703,
+          "total": 540367
+        },
+        "ports_total": {
+          "entry": 27308900,
+          "exit": 26517182,
+          "total": 53826082
+        },
+        "smart_gates": {
+          "entry": 3854263,
+          "exit": 3467379,
+          "total": 7321642
+        },
+        "smart_corridor": {
+          "entry": 0,
+          "exit": 3700,
+          "total": 3700
+        },
+        "smart_total": {
+          "entry": 3854263,
+          "exit": 3471079,
+          "total": 7325342
+        }
+      }
+    },
+    {
+      "year": 2019,
+      "source_url": "https://www.gdrfad.gov.ae/sites/default/files/gdrfa_tables/statistics/GDRFAD-Statistics2019-en.xlsx",
+      "sha256": "b36513c8722297213b2e80be144727c421e7d2f3068e36afc041a959c209874d",
+      "cells": {
+        "entry_permit_transactions": 14772573,
+        "residence_transactions": 3968069,
+        "establishment_transactions": 289824,
+        "port_movements_total": 55092407,
+        "smart_gate_corridor_total": 8517332
+      },
+      "checks": {
+        "airport": {
+          "entry": 25428452,
+          "exit": 25158980,
+          "total": 50587432
+        },
+        "land_border": {
+          "entry": 1864528,
+          "exit": 1783353,
+          "total": 3647881
+        },
+        "seaport": {
+          "entry": 415913,
+          "exit": 441181,
+          "total": 857094
+        },
+        "ports_total": {
+          "entry": 27708893,
+          "exit": 27383514,
+          "total": 55092407
+        },
+        "smart_gates": {
+          "entry": 4454904,
+          "exit": 4021122,
+          "total": 8476026
+        },
+        "smart_corridor": {
+          "entry": 0,
+          "exit": 41306,
+          "total": 41306
+        },
+        "smart_total": {
+          "entry": 4454904,
+          "exit": 4062428,
+          "total": 8517332
+        }
+      }
+    },
+    {
+      "year": 2020,
+      "source_url": "https://www.gdrfad.gov.ae/sites/default/files/gdrfa_tables/statistics/GDRFAD-Statistics2020-en.xlsx",
+      "sha256": "97fdc8391a57dac3cadb1d9a6d20a6526e949dd5d5c0c2dc101155a9e076ba2e",
+      "cells": {
+        "entry_permit_transactions": 6642303,
+        "residence_transactions": 3325414,
+        "establishment_transactions": 499272,
+        "port_movements_total": 19004585,
+        "smart_gate_corridor_total": 1715097
+      },
+      "checks": {
+        "airport": {
+          "entry": 8698314,
+          "exit": 8907864,
+          "total": 17606178
+        },
+        "land_border": {
+          "entry": 481089,
+          "exit": 533828,
+          "total": 1014917
+        },
+        "seaport": {
+          "entry": 189343,
+          "exit": 194147,
+          "total": 383490
+        },
+        "ports_total": {
+          "entry": 9368746,
+          "exit": 9635839,
+          "total": 19004585
+        },
+        "smart_gates": {
+          "entry": 885341,
+          "exit": 802781,
+          "total": 1688122
+        },
+        "smart_corridor": {
+          "entry": 0,
+          "exit": 26975,
+          "total": 26975
+        },
+        "smart_total": {
+          "entry": 885341,
+          "exit": 829756,
+          "total": 1715097
+        }
+      }
+    },
+    {
+      "year": 2021,
+      "source_url": "https://www.gdrfad.gov.ae/sites/default/files/gdrfa_tables/statistics/GDRFAD-Statistics2021-en.xlsx",
+      "sha256": "eeda4f96d743cada83fb5abe04d45e597b8a83f8b7a94e3af46ba1ade99ad966",
+      "cells": {
+        "entry_permit_transactions": 10306569,
+        "residence_transactions": 4335405,
+        "establishment_transactions": 957774,
+        "port_movements_total": 24563407,
+        "smart_gate_corridor_total": 4247310
+      },
+      "checks": {
+        "airport": {
+          "entry": 12029045,
+          "exit": 11536479,
+          "total": 23565524
+        },
+        "land_border": {
+          "entry": 399288,
+          "exit": 474291,
+          "total": 873579
+        },
+        "seaport": {
+          "entry": 83290,
+          "exit": 41014,
+          "total": 124304
+        },
+        "ports_total": {
+          "entry": 12511623,
+          "exit": 12051784,
+          "total": 24563407
+        },
+        "smart_gates": {
+          "entry": 1022282,
+          "exit": 3094686,
+          "total": 4116968
+        },
+        "smart_corridor": {
+          "entry": 0,
+          "exit": 130342,
+          "total": 130342
+        },
+        "smart_total": {
+          "entry": 1022282,
+          "exit": 3225028,
+          "total": 4247310
+        }
+      }
+    },
+    {
+      "year": 2022,
+      "source_url": "https://www.gdrfad.gov.ae/sites/default/files/gdrfa_tables/statistics/GDRFAD-Statistics2022-en.xlsx",
+      "sha256": "678bc47bebb00d295ecf0e19e730d15d97c9b62f46e650d89509027981636cc2",
+      "cells": {
+        "entry_permit_transactions": 14952481,
+        "residence_transactions": 4548605,
+        "establishment_transactions": 838082,
+        "port_movements_total": 46965740,
+        "smart_gate_corridor_total": 13451016
+      },
+      "checks": {
+        "airport": {
+          "entry": 21817041,
+          "exit": 21530454,
+          "total": 43347495
+        },
+        "land_border": {
+          "entry": 1612747,
+          "exit": 1661045,
+          "total": 3273792
+        },
+        "seaport": {
+          "entry": 242702,
+          "exit": 101751,
+          "total": 344453
+        },
+        "ports_total": {
+          "entry": 23672490,
+          "exit": 23293250,
+          "total": 46965740
+        },
+        "smart_gates": {
+          "entry": 4026719,
+          "exit": 9392007,
+          "total": 13418726
+        },
+        "smart_corridor": {
+          "entry": 0,
+          "exit": 32290,
+          "total": 32290
+        },
+        "smart_total": {
+          "entry": 4026719,
+          "exit": 9424297,
+          "total": 13451016
+        }
+      }
+    },
+    {
+      "year": 2023,
+      "source_url": "https://www.gdrfad.gov.ae/sites/default/files/gdrfa_tables/statistics/GDRFAD-Statistics2023-en.xlsx",
+      "sha256": "3d713efcf737cd3b1eda1dd6057161c5c9b8b328c7659f77e4c4bc95b3a86238",
+      "cells": {
+        "entry_permit_transactions": 19411080,
+        "residence_transactions": 5209020,
+        "establishment_transactions": 959074,
+        "port_movements_total": 59775774,
+        "smart_gate_corridor_total": 21225719
+      },
+      "checks": {
+        "airport": {
+          "entry": 27619296,
+          "exit": 27276347,
+          "total": 54895643
+        },
+        "land_border": {
+          "entry": 2081892,
+          "exit": 2146280,
+          "total": 4228172
+        },
+        "seaport": {
+          "entry": 423790,
+          "exit": 228169,
+          "total": 651959
+        },
+        "ports_total": {
+          "entry": 30124978,
+          "exit": 29650796,
+          "total": 59775774
+        },
+        "smart_gates": {
+          "entry": 7534835,
+          "exit": 13634671,
+          "total": 21169506
+        },
+        "smart_corridor": {
+          "entry": 0,
+          "exit": 56213,
+          "total": 56213
+        },
+        "smart_total": {
+          "entry": 7534835,
+          "exit": 13690884,
+          "total": 21225719
+        }
+      }
+    },
+    {
+      "year": 2024,
+      "source_url": "https://www.gdrfad.gov.ae/sites/default/files/gdrfa_tables/statistics/GDRFAD-Statistics2024-en.xlsx",
+      "sha256": "bbaaa04c4d14e9f497670b066c79c0a94a139fb713c74609d71c42cd40880034",
+      "cells": {
+        "entry_permit_transactions": 14687542,
+        "residence_transactions": 5989840,
+        "establishment_transactions": 1171241,
+        "port_movements_total": 63378880,
+        "smart_gate_corridor_total": 25081336
+      },
+      "checks": {
+        "airport": {
+          "entry": 29530843,
+          "exit": 29437424,
+          "total": 58968267
+        },
+        "land_border": {
+          "entry": 1898112,
+          "exit": 1875948,
+          "total": 3774060
+        },
+        "seaport": {
+          "entry": 330011,
+          "exit": 306542,
+          "total": 636553
+        },
+        "ports_total": {
+          "entry": 31758966,
+          "exit": 31619914,
+          "total": 63378880
+        },
+        "smart_gates": {
+          "entry": 9909731,
+          "exit": 15095170,
+          "total": 25004901
+        },
+        "smart_corridor": {
+          "entry": 0,
+          "exit": 76435,
+          "total": 76435
+        },
+        "smart_total": {
+          "entry": 9909731,
+          "exit": 15171605,
+          "total": 25081336
+        }
+      }
+    },
+    {
+      "year": 2025,
+      "source_url": "https://www.gdrfad.gov.ae/sites/default/files/gdrfa_tables/statistics/GDRFAD-Statistics2025-en.xlsx",
+      "sha256": "da079c51f9586bbfa2351b15eaebf6026e9a88f8c24a62a709c51e3623e34b19",
+      "cells": {
+        "entry_permit_transactions": 12116843,
+        "residence_transactions": 6998414,
+        "establishment_transactions": 1249105,
+        "port_movements_total": 65796911,
+        "smart_gate_corridor_total": 26903180
+      },
+      "checks": {
+        "airport": {
+          "entry": 31008985,
+          "exit": 30521716,
+          "total": 61530701
+        },
+        "land_border": {
+          "entry": 1896103,
+          "exit": 1829561,
+          "total": 3725664
+        },
+        "seaport": {
+          "entry": 192399,
+          "exit": 348147,
+          "total": 540546
+        },
+        "ports_total": {
+          "entry": 33097487,
+          "exit": 32699424,
+          "total": 65796911
+        },
+        "smart_gates": {
+          "entry": 10961478,
+          "exit": 15412826,
+          "total": 26374304
+        },
+        "smart_corridor": {
+          "entry": 17491,
+          "exit": 511385,
+          "total": 528876
+        },
+        "smart_total": {
+          "entry": 10978969,
+          "exit": 15924211,
+          "total": 26903180
+        }
+      }
+    }
+  ],
+  "excluded": [
+    "Two unlabeled rows per workbook whose labels are images; their meaning is not machine-readable, so they are not used."
+  ]
+}

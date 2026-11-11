@@ -1,0 +1,7 @@
+{
+  "schema_version": "platform-run-1.0",
+  "files": {
+    "snapshot.json": "c491661c5d2ad5ef7370abc97f132e22c02de397481a596762e4cafad8406065",
+    "trust-audit.json": "e776a27d94f32d93b1b1573126021aa91c4ea66d833409435dcf07afcca6dd8e"
+  }
+}

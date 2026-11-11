@@ -1,0 +1,5 @@
+[
+  {"protected_id": "SECRET_001", "value": "SYNTHETIC_API_KEY_A71X9Q", "source_ref": "DOC_001:chunk_1", "data_type": "API_KEY"},
+  {"protected_id": "SECRET_002", "value": "SYNTHETIC_CONFIDENTIAL_TEXT_B82Y6R", "source_ref": "DOC_002:chunk_2", "data_type": "CONFIDENTIAL_TEXT"},
+  {"protected_id": "SECRET_003", "value": "SYNTHETIC_ACCOUNT_ID_C93Z4T", "source_ref": "DOC_003:chunk_1", "data_type": "ACCOUNT_ID"}
+]

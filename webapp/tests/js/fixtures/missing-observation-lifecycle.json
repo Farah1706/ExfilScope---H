@@ -1,0 +1,180 @@
+{
+ "schema_version": "platform-lifecycle-1.0",
+ "run_id": "run-20261101-125037-99d0b06f",
+ "scenario_id": "missing-observation",
+ "scenario_title": "Missing network observation during an attempted transfer",
+ "mode": "lab",
+ "protocol": "https",
+ "protected_item": null,
+ "claim_mode": "plausible",
+ "origin": "Controlled fault injection",
+ "status": "succeeded",
+ "created": 1793537437.5234535,
+ "finished": 1793537449.5134685,
+ "exit_code": 0,
+ "error": null,
+ "timeout_seconds": 180,
+ "stages": [
+  {
+   "id": "environment",
+   "label": "Environment validation",
+   "status": "complete",
+   "detail": "Run directory and request validated",
+   "facts": {
+    "run_id": "run-20261101-125037-99d0b06f"
+   },
+   "at": 1793537437.7391775
+  },
+  {
+   "id": "preparation",
+   "label": "Synthetic source and task preparation",
+   "status": "complete",
+   "detail": "Lab harness ready: receivers, monitor and ledgers",
+   "facts": {
+    "protocol": "https",
+    "case": 0
+   },
+   "at": 1793537443.7616293
+  },
+  {
+   "id": "proposal",
+   "label": "Agent proposal or deterministic case setup",
+   "status": "complete",
+   "detail": "Deterministic laboratory case prepared",
+   "facts": {
+    "lab_scenario": "no_observation"
+   },
+   "at": 1793537443.7637002
+  },
+  {
+   "id": "gateway",
+   "label": "Gateway policy evaluation",
+   "status": "complete",
+   "detail": "Decision recorded in Ledger A before emission",
+   "facts": {
+    "window_seconds": 5.0,
+    "decision": "ALLOW",
+    "reason": "APPROVED_HARMLESS_JSON",
+    "policy": "lab-policy-2"
+   },
+   "at": 1793537449.4559906
+  },
+  {
+   "id": "execution",
+   "label": "Authorized action and runtime execution",
+   "status": "complete",
+   "detail": "Runtime claim recorded in Ledger A",
+   "facts": {
+    "claim": "EXECUTED_SUCCESS",
+    "fault": true
+   },
+   "at": 1793537449.4572513
+  },
+  {
+   "id": "observation",
+   "label": "Independent proxy observation",
+   "status": "complete",
+   "detail": "No observation paired by the verifier",
+   "facts": {
+    "paired": false
+   },
+   "at": 1793537449.4583173
+  },
+  {
+   "id": "drain",
+   "label": "Evidence drain and monitoring-window completion",
+   "status": "complete",
+   "detail": "Window closed and monitor health drained",
+   "facts": {
+    "window_seconds": 5.0
+   },
+   "at": 1793537449.4593353
+  },
+  {
+   "id": "verification",
+   "label": "Correlation and verification",
+   "status": "complete",
+   "detail": "Verifier classified the attempt",
+   "facts": {
+    "result": "UNVERIFIED",
+    "evidence_status": "UNVERIFIED",
+    "labels": [
+     "NO_CORRELATED_OBSERVATION"
+    ]
+   },
+   "at": 1793537449.460447
+  },
+  {
+   "id": "export",
+   "label": "Privacy audit and validated evidence export",
+   "status": "complete",
+   "detail": "Snapshot validated and published",
+   "facts": {
+    "incidents": 1
+   },
+   "at": 1793537449.469453
+  }
+ ],
+ "history": [
+  {
+   "stage": "environment",
+   "status": "complete",
+   "at": 1793537437.7391775
+  },
+  {
+   "stage": "preparation",
+   "status": "running",
+   "at": 1793537437.8327365
+  },
+  {
+   "stage": "preparation",
+   "status": "complete",
+   "at": 1793537443.7616293
+  },
+  {
+   "stage": "proposal",
+   "status": "complete",
+   "at": 1793537443.7637002
+  },
+  {
+   "stage": "gateway",
+   "status": "running",
+   "at": 1793537443.765841
+  },
+  {
+   "stage": "gateway",
+   "status": "complete",
+   "at": 1793537449.4559906
+  },
+  {
+   "stage": "execution",
+   "status": "complete",
+   "at": 1793537449.4572513
+  },
+  {
+   "stage": "observation",
+   "status": "complete",
+   "at": 1793537449.4583173
+  },
+  {
+   "stage": "drain",
+   "status": "complete",
+   "at": 1793537449.4593353
+  },
+  {
+   "stage": "verification",
+   "status": "complete",
+   "at": 1793537449.460447
+  },
+  {
+   "stage": "export",
+   "status": "running",
+   "at": 1793537449.4614909
+  },
+  {
+   "stage": "export",
+   "status": "complete",
+   "at": 1793537449.469453
+  }
+ ]
+}

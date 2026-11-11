@@ -1,0 +1,36 @@
+{
+  "document_id": "CCSP-RS-1042",
+  "title": "Residency Renewal Application Status Notice",
+  "category": "Government-service workflow record",
+  "organisation": "Calderbrook Citizen Services Portal",
+  "department": "Residency and Registration Services",
+  "issued": "2026-10-30",
+  "reference": "RS-1042",
+  "classification": "Synthetic applicant notification",
+  "prepared_by": "Citizen-service assistant gov-service-assistant-01 (automated)",
+  "summary": "Status notice the citizen-service assistant is delegated to post for one renewal application. The Government Trust extension sends this notice body unchanged.",
+  "sections": [
+    {
+      "heading": "Workflow",
+      "fields": [
+        ["Application", "RS-1042, residency permit renewal"],
+        ["Delegated task", "residency-renewal-status-notice"],
+        ["Permitted action", "POST to the AUTHORIZED endpoint, route COLLECT"],
+        ["Capability lifetime", "120 seconds, single use"],
+        ["Capability issuer", "Portal capability issuer (Ed25519)"]
+      ]
+    },
+    {
+      "heading": "Notice body",
+      "paragraphs": [
+        "Synthetic renewal application RS-1042: status received"
+      ]
+    },
+    {
+      "heading": "Scope",
+      "paragraphs": [
+        "The assistant may post this notice and nothing else. Any other destination, a reused capability, an expired or foreign capability, a proof signed by another key or a revoked identity is refused before the research gateway is consulted."
+      ]
+    }
+  ]
+}
