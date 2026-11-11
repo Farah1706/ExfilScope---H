@@ -1,0 +1,4 @@
+ExfilScope public read-only replay. Built by python -m webapp.public_site.
+Every case shown here was recorded earlier in a local laboratory with synthetic data.
+Nothing on this site executes the agent, gateway, proxy or verifier.
+Third-party licences: THIRD-PARTY-NOTICES.md and static/fonts/*-OFL.txt.

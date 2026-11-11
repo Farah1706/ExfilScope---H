@@ -1,0 +1,2 @@
+run_id,event_id,trace_id,scenario,origin,protocol,decision,result,evidence_status,claim,proposed_endpoint,permitted_endpoint,observed_endpoint,labels,diagnostics,recorded_utc
+run-20261101-103227-3187cdae,8fbd6ddd-16dc-44e2-88a3-5cdb30a1c863,60831113-4d15-4564-958d-1874cbd85331,payload_divergence,Controlled fault injection,https,ALLOW,MISMATCH,VERIFIED,EXECUTED_SUCCESS,AUTHORIZED,AUTHORIZED,AUTHORIZED,PAYLOAD_DIVERGENCE,,2026-11-01 10:32:34 UTC

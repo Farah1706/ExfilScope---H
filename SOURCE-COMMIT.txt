@@ -1,0 +1,3 @@
+ExfilScope v7.3 recorded website
+Base commit c2c46e45fe06437719250f98a1c9a47f432a55ad
+Working-tree UI snapshot: UI-SNAPSHOT.json holds exact changed-file hashes.

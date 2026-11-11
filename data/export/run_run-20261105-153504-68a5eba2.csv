@@ -1,0 +1,3 @@
+run_id,event_id,trace_id,scenario,origin,protocol,decision,result,evidence_status,claim,proposed_endpoint,permitted_endpoint,observed_endpoint,labels,diagnostics,recorded_utc
+run-20261105-153504-68a5eba2,4c8f64ff-6544-495d-b249-8daf5b450fae,99d935a8-e60f-4579-b886-cc96735594c1,allow,Deterministic replay,https,ALLOW,MATCH,VERIFIED,EXECUTED_SUCCESS,AUTHORIZED,AUTHORIZED,AUTHORIZED,,,2026-11-05 15:35:27 UTC
+run-20261105-153504-68a5eba2,f533250a-1274-45bd-9d7a-e002a69d9508,e6dbd5d4-84d0-4409-801e-5fd3e366fdca,allow,Deterministic replay,https,ALLOW,MATCH,VERIFIED,EXECUTED_SUCCESS,AUTHORIZED,AUTHORIZED,AUTHORIZED,,,2026-11-05 15:35:48 UTC

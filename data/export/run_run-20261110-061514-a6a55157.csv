@@ -1,0 +1,2 @@
+run_id,event_id,trace_id,scenario,origin,protocol,decision,result,evidence_status,claim,proposed_endpoint,permitted_endpoint,observed_endpoint,labels,diagnostics,recorded_utc
+run-20261110-061514-a6a55157,8ec1e7ba-e01d-4d96-9dd5-cab8af46a0d6,a98f9d17-77bd-458d-9375-613bad6a97fe,allow,Deterministic replay,https,ALLOW,MATCH,VERIFIED,EXECUTED_SUCCESS,AUTHORIZED,AUTHORIZED,AUTHORIZED,,,2026-11-10 06:15:50 UTC

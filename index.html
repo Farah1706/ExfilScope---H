@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="exfilscope-mode" content="public">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>ExfilScope</title>
+  <meta name="description" content="Keep government AI actions within their permission and check what happened.">
+  <link rel="icon" href="static/img/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="static/css/app.css">
+  <script type="module" src="static/js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="#/overview" id="brand-top"></a>
+      <button class="btn small" id="menu" aria-expanded="false" aria-controls="rail">Menu</button>
+    </header>
+    <nav class="rail" id="rail" aria-label="Workspaces">
+      <a class="brand" href="#/overview" id="brand"></a>
+      <div class="nav" id="nav"></div>
+      <div class="rail-foot">
+        <p class="rail-note" id="rail-note">Government service demo · public figures and sample records.</p>
+      </div>
+    </nav>
+    <main id="main" tabindex="-1"></main>
+  </div>
+  <div id="drawer-root"></div>
+</body>
+</html>
